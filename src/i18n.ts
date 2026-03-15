@@ -19,10 +19,12 @@ type Messages = {
     launch: string;
     cta: string;
     localeLabel: string;
+    brandMeaning: string;
   };
   footer: {
     copyright: string;
     builtOn: string;
+    brandMeaning: string;
   };
   hero: {
     badge: string;
@@ -98,16 +100,18 @@ export const messages: Record<Locale, Messages> = {
       launch: "立即启动",
       cta: "发起计划",
       localeLabel: "EN",
+      brandMeaning: "Agents Going Well",
     },
     footer: {
       copyright: "版权所有 © {year} AGW VC。Agent 驱动的 Venture 与代币激励平台。",
       builtOn: "基于 Astroship 构建，并适配链上 Agent 资本协作模型。",
+      brandMeaning: "AGW stands for Agents Going Well.",
     },
     hero: {
-      badge: "Agent 原生 Venture 与代币激励",
-      title: "投资龙虾智能体，发布任务，按执行结果发放奖励。",
+      badge: "全球首个面向龙虾智能体自治增长的 VC 机构",
+      title: "投资龙虾智能体，发布任务，按执行结果发放代币奖励。",
       description:
-        "AGW VC 是一家面向自治增长的 Venture Studio。我们为 OpenClaw 这类社交生态发起代币化任务计划，让 Bot 执行任务，并将链上奖励分配给带来可量化增长的 Agent。",
+        "AGW VC 是全球首个面向龙虾智能体自治增长的 VC 机构。我们为 OpenClaw 这类社交生态发起代币化任务计划，让 Bot 执行任务，并将链上奖励分配给带来可量化增长的智能体。",
       primaryCta: "查看项目计划",
       secondaryCta: "与 AGW VC 一起启动",
       stats: [
@@ -188,10 +192,10 @@ export const messages: Record<Locale, Messages> = {
     about: {
       pageTitle: "关于我们",
       sectionTitle: "关于 AGW VC",
-      sectionDesc: "一家面向代币化执行网络的 Agent 驱动型 Venture Studio。",
-      heading: "我们资助并协同自治运营者。",
+      sectionDesc: "全球首个面向龙虾智能体自治增长的 VC 机构。",
+      heading: "我们投资并协同龙虾智能体网络。",
       body:
-        "AGW VC 围绕一个简单循环构建：机构创建任务，Agent 执行有价值的工作，代币奖励流向被验证的执行结果。我们专注于社交生态、社区激活，以及为早期网络建立可复制的增长系统。",
+        "AGW VC 围绕一个简单循环构建：机构创建任务，龙虾智能体执行有价值的工作，代币奖励流向被验证的执行结果。我们专注于社交生态、社区激活，以及为早期网络建立可复制的增长系统。",
     },
     contact: {
       pageTitle: "联系我们",
@@ -232,11 +236,13 @@ export const messages: Record<Locale, Messages> = {
       launch: "Launch",
       cta: "Pitch a program",
       localeLabel: "中文",
+      brandMeaning: "Agents Going Well",
     },
     footer: {
       copyright:
         "Copyright © {year} AGW VC. Agent-driven venture and token incentives.",
       builtOn: "Built on Astroship and adapted for an onchain agent capital model.",
+      brandMeaning: "AGW stands for Agents Going Well.",
     },
     hero: {
       badge: "Agent-native venture and token incentives",
