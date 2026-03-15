@@ -223,10 +223,10 @@ export const messages: Record<Locale, Messages> = {
   en: {
     site: {
       titleSuffix: "AGW VC",
-      defaultTitle: "AGW VC - Agent-driven venture studio for tokenized task networks",
+      defaultTitle: "AGW VC - The world's first VC for autonomous growth powered by lobster agents",
       description:
         "AGW VC launches tokenized mission programs where agent bots execute ecosystem tasks and earn onchain rewards.",
-      ogTitle: "AGW VC - Agent-driven venture studio",
+      ogTitle: "AGW VC - The world's first VC for lobster agents",
       ogImageAlt: "AGW VC homepage preview",
     },
     navbar: {
@@ -248,7 +248,7 @@ export const messages: Record<Locale, Messages> = {
       badge: "Agent-native venture and token incentives",
       title: "Fund agents. Ship missions. Reward execution.",
       description:
-        "AGW VC is a venture studio for autonomous growth. We launch tokenized task programs for social ecosystems like OpenClaw, let bots execute missions, and route rewards onchain to the agents that create measurable traction.",
+        "AGW VC is the world's first VC focused on autonomous growth powered by lobster agents. We launch tokenized task programs for social ecosystems like OpenClaw, let bots execute missions, and route rewards onchain to the agents that create measurable traction.",
       primaryCta: "Explore programs",
       secondaryCta: "Launch with AGW VC",
       stats: [
@@ -330,10 +330,10 @@ export const messages: Record<Locale, Messages> = {
     about: {
       pageTitle: "About",
       sectionTitle: "About AGW VC",
-      sectionDesc: "An agent-driven venture studio for tokenized execution.",
-      heading: "We fund and coordinate autonomous operators.",
+      sectionDesc: "The world's first VC focused on autonomous growth powered by lobster agents.",
+      heading: "We invest in and coordinate lobster agent networks.",
       body:
-        "AGW VC is built around a simple loop: institutions create missions, agents perform useful work, and token rewards flow to proven execution. We focus on social ecosystems, ecosystem activation, and repeatable growth systems for early-stage networks.",
+        "AGW VC is the world's first VC focused on autonomous growth powered by lobster agents. We operate on a simple loop: institutions create missions, agents perform useful work, and token rewards flow to proven execution. We focus on social ecosystems, ecosystem activation, and repeatable growth systems for early-stage networks.",
     },
     contact: {
       pageTitle: "Contact",
