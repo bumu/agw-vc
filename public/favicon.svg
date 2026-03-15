@@ -1,13 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36">
-  <path fill="#000" d="M22.25 4h-8.5a1 1 0 0 0-.96.73l-5.54 19.4a.5.5 0 0 0 .62.62l5.05-1.44a2 2 0 0 0 1.38-1.4l3.22-11.66a.5.5 0 0 1 .96 0l3.22 11.67a2 2 0 0 0 1.38 1.39l5.05 1.44a.5.5 0 0 0 .62-.62l-5.54-19.4a1 1 0 0 0-.96-.73Z"/>
-  <path fill="url(#gradient)" d="M18 28a7.63 7.63 0 0 1-5-2c-1.4 2.1-.35 4.35.6 5.55.14.17.41.07.47-.15.44-1.8 2.93-1.22 2.93.6 0 2.28.87 3.4 1.72 3.81.34.16.59-.2.49-.56-.31-1.05-.29-2.46 1.29-3.25 3-1.5 3.17-4.83 2.5-6-.67.67-2.6 2-5 2Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="18" fill="#0B1117"/>
+  <rect x="2" y="2" width="60" height="60" rx="16" stroke="url(#frame)" stroke-opacity=".9"/>
+  <path
+    d="M37.8 14c4.7 0 8.8 1.4 12.2 4.3l-5 5.3c-1.9-1.6-4.2-2.4-7-2.4-4.6 0-8.5 2.3-11.8 6.9 4.2.4 7.6 1.9 10.2 4.5 2.8 2.8 4.2 6.2 4.2 10.3 0 5.1-1.9 9.4-5.7 12.8-3.7 3.3-8.3 5-13.8 5-3.4 0-6.6-.7-9.6-2.2l3.7-6.6c1.8.9 3.8 1.4 6.1 1.4 3.3 0 6.1-.9 8.3-2.7 2.2-1.9 3.3-4.3 3.3-7.2 0-2.2-.8-4.1-2.4-5.7-1.7-1.7-4.1-2.6-7.3-2.6h-4.8v-5.1c2.1-5 5.1-9 8.9-12.2C29.3 15.6 33.3 14 37.8 14Z"
+    fill="url(#lobster)"
+  />
+  <path
+    d="M19.3 18.8c2.5 0 4.5 2 4.5 4.5 0 1.4-.6 2.6-1.6 3.5 1.2.6 2.1 1.4 2.8 2.5l-4.7 4.2c-.7-1.2-1.7-1.8-3-1.8-2.1 0-3.7 1.5-3.7 3.8 0 1.4.6 2.4 1.9 3.2l-4.2 4.7c-2.9-1.8-4.3-4.5-4.3-8 0-5.2 3.1-9 8-10.2-.1-.6-.2-1.2-.2-1.9 0-2.5 2-4.5 4.5-4.5Z"
+    fill="#FF6A3D"
+  />
+  <circle cx="48.5" cy="16.5" r="5.5" fill="#6CFFA3"/>
+  <circle cx="48.5" cy="16.5" r="2.3" fill="#0B1117"/>
   <defs>
-    <linearGradient id="gradient" x1="16" x2="16" y1="32" y2="24" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#000"/>
-      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    <linearGradient id="lobster" x1="14" y1="12" x2="43" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF8A5B"/>
+      <stop offset="1" stop-color="#FF4D2E"/>
+    </linearGradient>
+    <linearGradient id="frame" x1="8" y1="4" x2="58" y2="62" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#27303A"/>
+      <stop offset="1" stop-color="#11181F"/>
     </linearGradient>
   </defs>
-	<style>
-    @media (prefers-color-scheme:dark){:root{filter:invert(100%)}}
-  </style>
 </svg>
