@@ -1,5 +1,13 @@
 ---
 import Button from "./ui/button.astro";
+import { getMessages, type Locale } from "@/i18n";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const copy = getMessages(locale);
 ---
 
 <!-- To make this contact form work, create your free access key from https://web3forms.com/
@@ -16,43 +24,43 @@ import Button from "./ui/button.astro";
   <div class="mb-5">
     <input
       type="text"
-      placeholder="Full Name"
+      placeholder={copy.contactForm.namePlaceholder}
       required
       class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-hidden focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
       name="name"
     />
     <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-      Please provide your full name.
+      {copy.contactForm.nameError}
     </div>
   </div>
   <div class="mb-5">
-    <label for="email_address" class="sr-only">Email Address</label><input
+      <label for="email_address" class="sr-only">{copy.contactForm.emailLabel}</label><input
       id="email_address"
       type="email"
-      placeholder="Email Address"
+      placeholder={copy.contactForm.emailPlaceholder}
       name="email"
       required
       class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-hidden focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
     />
     <div class="empty-feedback text-red-400 text-sm mt-1">
-      Please provide your email address.
+      {copy.contactForm.emailEmptyError}
     </div>
     <div class="invalid-feedback text-red-400 text-sm mt-1">
-      Please provide a valid email address.
+      {copy.contactForm.emailInvalidError}
     </div>
   </div>
   <div class="mb-3">
     <textarea
       name="message"
       required
-      placeholder="Your Message"
+      placeholder={copy.contactForm.messagePlaceholder}
       class="w-full px-4 py-3 border-2 placeholder:text-gray-800 rounded-md outline-hidden h-36 focus:ring-4 border-gray-300 focus:border-gray-600 ring-gray-100"
     ></textarea>
     <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
-      Please enter your message.
+      {copy.contactForm.messageError}
     </div>
   </div>
-  <Button type="submit" size="lg" block>Send Message</Button>
+  <Button type="submit" size="lg" block>{copy.contactForm.submit}</Button>
   <div id="result" class="mt-3 text-center"></div>
 </form>
 
@@ -91,7 +99,7 @@ import Button from "./ui/button.astro";
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
 
-    result.innerHTML = "Sending...";
+    result.innerHTML = {JSON.stringify(copy.contactForm.sending)};
 
     fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -114,7 +122,7 @@ import Button from "./ui/button.astro";
       })
       .catch((error) => {
         console.log(error);
-        result.innerHTML = "Something went wrong!";
+        result.innerHTML = {JSON.stringify(copy.contactForm.unknownError)};
       })
       .then(function () {
         form.reset();

@@ -1,53 +1,90 @@
 ---
-import { Picture } from "astro:assets";
-import heroImage from "@/assets/hero.png";
 import Link from "@/components/ui/link.astro";
+import { getMessages, localizePath, type Locale } from "@/i18n";
 import { Icon } from "astro-icon/components";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const copy = getMessages(locale);
 ---
 
 <main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 hidden md:block">
-    <Picture
-      src={heroImage}
-      alt="Astronaut in the air"
-      widths={[200, 400, 600]}
-      sizes="(max-width: 800px) 100vw, 620px"
-      loading="eager"
-      format="avif"
-    />
-  </div>
+  class="grid gap-12 lg:grid-cols-[1.15fr_0.85fr] items-center pt-16 pb-10 md:pt-12 md:pb-24">
   <div>
+    <div
+      class="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-3 py-1 text-sm text-slate-600">
+      <span class="inline-block h-2 w-2 rounded-full bg-emerald-500"></span>
+      {copy.hero.badge}
+    </div>
     <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Marketing website done with Astro
+      class="mt-6 text-5xl font-bold tracking-tight text-slate-900 lg:text-6xl xl:text-7xl">
+      {copy.hero.title}
     </h1>
-    <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly create
-      any website with this starter.
+    <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
+      {copy.hero.description}
     </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <Link
-        href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
-        target="_blank"
-        class="flex gap-1 items-center justify-center"
-        rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
-
-        Download for Free
+    <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+      <Link href={localizePath("/#programs", locale)} class="flex items-center justify-center gap-2">
+        <Icon class="h-5 w-5 text-white" name="bx:rocket" />
+        {copy.hero.primaryCta}
       </Link>
       <Link
-        size="lg"
+        href={localizePath("/contact", locale)}
         style="outline"
-        rel="noopener"
-        href="https://github.com/surjithctly/astroship"
-        class="flex gap-1 items-center justify-center"
-        target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-        GitHub Repo
+        class="flex items-center justify-center gap-2">
+        <Icon class="h-5 w-5 text-black" name="bx:message-rounded-dots" />
+        {copy.hero.secondaryCta}
       </Link>
+    </div>
+    <div class="mt-8 flex flex-wrap gap-6 text-sm text-slate-500">
+      {
+        copy.hero.stats.map((stat) => (
+          <div>
+            <div class="text-2xl font-semibold text-slate-900">{stat.value}</div>
+            {stat.label}
+          </div>
+        ))
+      }
+    </div>
+  </div>
+
+  <div class="rounded-3xl border border-gray-200 bg-white p-6 shadow-sm">
+    <div class="flex items-center justify-between border-b border-gray-100 pb-4">
+      <div>
+        <p class="text-sm font-medium text-slate-500">{copy.hero.boardLabel}</p>
+        <h2 class="text-2xl font-semibold text-slate-900">{copy.hero.boardTitle}</h2>
+      </div>
+      <span
+        class="rounded-full bg-emerald-50 px-3 py-1 text-sm font-medium text-emerald-700">
+        {copy.hero.boardStatus}
+      </span>
+    </div>
+
+    <div class="mt-5 space-y-4">
+      {
+        copy.hero.missions.map((mission) => (
+          <div class="rounded-2xl bg-slate-50 p-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="font-medium text-slate-900">{mission.title}</p>
+                <p class="mt-1 text-sm text-slate-500">{mission.description}</p>
+              </div>
+              <span class="text-sm font-semibold text-slate-900">{mission.reward}</span>
+            </div>
+          </div>
+        ))
+      }
+      <div class="rounded-2xl bg-slate-900 p-4 text-white">
+        <p class="text-sm uppercase tracking-[0.2em] text-slate-300">
+          {copy.hero.engineLabel}
+        </p>
+        <p class="mt-2 text-lg font-medium">
+          {copy.hero.engineText}
+        </p>
+      </div>
     </div>
   </div>
 </main>

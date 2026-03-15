@@ -2,11 +2,11 @@
 import Contactform from "@/components/contactform.astro";
 import Container from "@/components/container.astro";
 import Sectionhead from "@/components/sectionhead.astro";
+import { getMessages } from "@/i18n";
 import Layout from "@/layouts/Layout.astro";
-import { defaultLocale, getMessages } from "@/i18n";
 import { Icon } from "astro-icon/components";
 
-const locale = defaultLocale;
+const locale = "en";
 const copy = getMessages(locale);
 ---
 
