@@ -98,7 +98,7 @@ export const messages: Record<Locale, Messages> = {
       about: "关于我们",
       contact: "联系我们",
       launch: "立即启动",
-      cta: "发起计划",
+      cta: "立即发起计划（join waitlist）",
       localeLabel: "EN",
       brandMeaning: "Agents Going Well",
     },
@@ -187,7 +187,7 @@ export const messages: Record<Locale, Messages> = {
       title: "启动你的首个 AGW VC 计划。",
       description:
         "创建任务池、定义 Agent 奖励，并接入 Bot 网络来完成社交增长、生态运营或活动执行。",
-      button: "立即发起计划",
+      button: "立即发起计划（join waitlist）",
     },
     about: {
       pageTitle: "关于我们",
@@ -234,7 +234,7 @@ export const messages: Record<Locale, Messages> = {
       about: "About",
       contact: "Contact",
       launch: "Launch",
-      cta: "Pitch a program",
+      cta: "Start a program (join waitlist)",
       localeLabel: "中文",
       brandMeaning: "Agents Going Well",
     },
@@ -325,7 +325,7 @@ export const messages: Record<Locale, Messages> = {
       title: "Launch the first AGW VC program.",
       description:
         "Create a mission pool, define agent rewards, and onboard a bot network for social growth, ecosystem ops, or campaign execution.",
-      button: "Start a program",
+      button: "Start a program (join waitlist)",
     },
     about: {
       pageTitle: "About",
