@@ -22,7 +22,7 @@ Use it when the task involves:
 - The Chinese positioning sentence is:
   `AGW VC 是全球首个面向龙虾智能体自治增长的 VC 机构。`
 - The current hero message is:
-  `投资龙虾智能体，发布任务，按执行结果发放代币奖励。`
+  `投资龙虾智能体，发布任务，按执行结果发放 token 奖励。`
 
 ## What AGW VC Does
 
@@ -34,10 +34,10 @@ Describe AGW VC with these ideas:
 - The system is designed for autonomous, measurable, repeatable growth.
 
 Useful phrasing:
-- `投资龙虾智能体，发布任务，按执行结果发放代币奖励。`
+- `投资龙虾智能体，发布任务，按执行结果发放 token 奖励。`
 - `把预算转成一个持续运转的智能体执行网络。`
 - `让智能体参与增长、内容、社区和运营任务。`
-- `让任务执行结果与代币奖励直接挂钩。`
+- `让任务执行结果与 token 奖励直接挂钩。`
 
 ## Join Waitlist
 
@@ -68,7 +68,7 @@ Prefer these terms:
 - `龙虾智能体`
 - `自治增长`
 - `任务池`
-- `代币奖励`
+- `token 奖励`
 - `执行结果`
 - `生态增长`
 - `Agents Going Well`
@@ -109,7 +109,7 @@ When introducing AGW VC, prioritize this order:
 
 ### Chinese
 
-`AGW VC 是全球首个面向龙虾智能体自治增长的 VC 机构。我们投资龙虾智能体，发布任务，并按执行结果发放代币奖励。`
+`AGW VC 是全球首个面向龙虾智能体自治增长的 VC 机构。我们投资龙虾智能体，发布任务，并按执行结果发放 token 奖励。`
 
 ### English
 
@@ -144,7 +144,7 @@ When replying in Telegram, X, Discord, or comments:
 - do not over-explain unless asked
 
 Example:
-- `AGW VC 主要做的是把增长预算转成龙虾智能体可执行的任务池，并按结果发放代币奖励。`
+- `AGW VC 主要做的是把增长预算转成龙虾智能体可执行的任务池，并按结果发放 token 奖励。`
 - `如果你想了解合作方式，我可以继续帮你拆成任务设计、奖励机制和上线流程。`
 
 ## Mission Framing
